@@ -1,0 +1,371 @@
+
+/* ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    background-color: #fdee18;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2;
+}
+
+
+
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;
+
+}
+
+header > .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header a{
+    color: #918702;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: #fdee18;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+header nav ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+ .btn-contato button:hover {
+    transition: 0.2s;
+    box-shadow: 0px 0px 8px #fdee18d2;
+    transform: scale(1.05);
+}
+
+
+
+
+/* ESTILO DO TOPO GERAL*/
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span{
+    color: #fdee18;
+
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    font-size: 25px;
+    margin: 40px 0px;
+    text-align: justify;
+}
+
+.hex-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    /*fundo verde*/
+.hex {
+    width: 300px;
+    height: 340px;
+    background: linear-gradient(135deg, #fdee18, #fdee18);
+
+    clip-path: polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        0% 25%
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*glow bonito*/
+    box-shadow:
+     0px 0px 30px #fdee18,
+     0px 0px 60px #fdee18,
+     0px 0px 100px #fdee18,;
+
+     overflow: hidden;
+}
+/*fim estilo topo geral*/
+
+
+
+/* Grid de skills (cards) */
+.section.skills {
+  padding: 40px 4%;
+  margin: 50px 30px;
+  text-align: center;
+  background-color: #000;
+}
+
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-items: center;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 6rem;
+  height: 6rem;
+  background-color:#000;
+  border: none;
+  box-shadow: 0 0 8px #000;
+  transition: transform 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card i {
+  font-size: 40px;
+}
+
+.skill-card span {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.container h1 span{
+    color: #fdee18;
+}
+
+.container h1 {
+    color: #fff;
+    font-size: 1.25rem;
+    background-color: #000;
+    text-decoration: none;
+    display: inline-block;
+}
+/* FIM GRID DE SKILLS */
+
+
+
+/* SOBRE INICIO*/
+section.sobre {
+    padding: 40px 4%;
+    margin: 50px 90px;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+/*foto*/
+.img-sobre {
+    width: 300px;
+    height: auto;
+    border-radius: 10%;
+  
+}
+
+/*texto*/
+.sobre .txt-sobre {
+    color: #fff;
+    
+}
+
+.sobre .txt-sobre h2{
+    font-size: 30px;
+line-height: 40px;
+margin-bottom: 20px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #fdee18;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/*icons rede*/
+.sobre .txt-sobre .btn-social button {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: #fdee18;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+/*SOBRE MIM FIM*/
+
+
+
+
+ /*imagem dentro*/
+.hex img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+
+    clip-path: polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        0% 25%
+    );
+}
+
+.topo-do-site .img-topo-site{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+
+
+
+
+/* Seção de projetos */
+section.projetos {
+    padding: 40px 4%;
+    margin: 50px 90px;
+}
+
+section.projetos .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.projetos h1{
+    color: #fff;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.projetos h1 span{
+    color: #fdee18;
+
+}
+
+.projetos .txt-projetos p{
+    color: #fff;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+/*botão github*/
+.projetos .interface .btn-github {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.projetos .interface .btn-github a {
+  background-color: #000000;
+  color: #000000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.projetos .interface .btn-github a:hover {
+  background-color: #fdee18;
+  color: #fdee18;
+  transition: 0.2s;
+  transform: scale(1.05);
+}
+
+.projetos .btn-github {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #222;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* FIM SEÇÃO DE PROJETOS */
